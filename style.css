@@ -1,0 +1,209 @@
+:root{
+    --Teal-500: hsl(179, 62%, 43%);
+    --Green-400: hsl(71, 81%, 54%);
+    --Teal-100: hsl(204, 43%, 93%);
+    --Gray-500: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Teal-100);
+    
+}
+
+.contianer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 0rem;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0.5rem 0.5rem 2rem hsl(0, 0%, 0%, 10%);
+
+}
+
+.com{
+    width: 100%;
+    grid-column: span 2;
+    grid-row: 1 / 2;
+    background-color: white;
+    padding-bottom: 2rem;
+}
+
+.head-1{
+    color: var(--Teal-500);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 3rem 0rem 0rem 3rem ;
+}
+
+.content-1,
+.content-2,
+.content-3{
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.content-1{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--Green-400);
+    margin: 1rem 4rem 1rem 3rem;
+}
+
+.content-2{
+
+    margin: 0rem 6rem 0.4rem 3rem;
+}
+
+.content-3{
+    margin: 0rem 4rem 0rem 3rem;
+}
+
+.month{
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--Teal-500);
+    padding: 2rem 2.5rem 2rem 2.5rem;
+
+}
+
+.head-2{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.price{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price-1{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.time{
+    color: white;
+    font-weight: 450;
+    opacity: 0.75;
+}
+
+.con{
+    color: white;  
+    margin-bottom: 2rem;
+}
+
+button{
+    width: 90%;
+    height: 3rem;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: var(--Green-400);
+    border-radius: 0.3rem;
+    box-shadow: 0.5rem 0.5rem 2rem hsl(0, 0%, 0%, 20%);
+    
+}
+
+.why{
+    grid-column: 2 / 3;
+    padding: 2rem 2rem 2rem 2rem;
+    background-color:hsl(179, 62%, 43%, 80%) ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-3{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.same-1{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.same{
+    margin-top: 0.25rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .contianer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        width: 90%;
+        height: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0.2rem 0.2rem 1rem hsl(0, 0%, 0%, 10%);
+        overflow: hidden;
+    }
+
+    .com {
+        grid-column: 1 / 2;
+        padding: 2rem 1.25rem;
+    }
+
+    .head-1 {
+        margin: 0 0 1rem 0;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .content-1,
+    .content-2,
+    .content-3 {
+        margin: 0.5rem 1rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .month {
+        grid-column: 1 / 2;
+        padding: 2rem 1.25rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .why {
+        grid-column: 1 / 2;
+        padding: 2rem 1.25rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+    }
+}
