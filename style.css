@@ -9,6 +9,7 @@
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
+    border-collapse: collapse;
 }
 
 body{
@@ -18,28 +19,30 @@ body{
     place-content: center;
     font-family: 'Karla', sans-serif;
     background-color: var(--Teal-100);
+    overflow: hidden;
     
 }
 
 .contianer{
     width: 100%;
-    height: 100%;
+    max-width: 720px;
+    height: auto;
     display: grid;
     gap: 0rem;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     border-radius: 0.4rem;
     overflow: hidden;
     box-shadow: 0.5rem 0.5rem 2rem hsl(0, 0%, 0%, 10%);
 
 }
 
+
+
+
 .com{
-    width: 100%;
     grid-column: span 2;
-    grid-row: 1 / 2;
-    background-color: white;
-    padding-bottom: 1rem;
+    
 }
 
 .head-1{
@@ -69,7 +72,7 @@ body{
 }
 
 .content-3{
-    margin: 0rem 4rem 0rem 3rem;
+    margin: 0rem 2rem 2.5rem 3rem;
 }
 
 .month{
