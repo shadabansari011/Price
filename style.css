@@ -39,7 +39,7 @@ body{
     grid-column: span 2;
     grid-row: 1 / 2;
     background-color: white;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .head-1{
